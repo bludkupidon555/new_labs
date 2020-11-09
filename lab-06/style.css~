@@ -1,0 +1,6 @@
+.label{
+	font-family: "DejaVu Serif";
+	font-size: 14pt;
+	color: #2AFC85;
+}
+

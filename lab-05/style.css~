@@ -1,0 +1,25 @@
+.but{
+	background: black;
+	font-family: "DejaVu Serif";
+	font-size: 14pt;
+	color: #2AFC85;
+}
+
+.lab{
+	font-family: "DejaVu Serif";
+	font-size: 14pt;
+	color: #2AFC85;
+}
+
+.but1{
+	background: black;
+	font-family: "DejaVu Serif";
+	font-size: 14pt;
+	color: magenta;
+}
+
+.lab1{
+	font-family: "DejaVu Serif";
+	font-size: 14pt;
+	color: #2AFC85;
+}
