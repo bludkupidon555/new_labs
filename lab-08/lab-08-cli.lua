@@ -1,7 +1,5 @@
-
-
 red = require 'redis'
-cli = red.connect('redis.fxnode.ru', 6379)
+local cli = red.connect ('127.0.0.1', 6379)
 
 lgi = require 'lgi'
 

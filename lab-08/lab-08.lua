@@ -1,4 +1,3 @@
-
 local lgi = require 'lgi'
 
 local glib = lgi.GLib
@@ -7,7 +6,7 @@ local gtk = lgi.Gtk
 gtk.init()
 
 local red = require 'redis'
-local cli = red.connect ('redis.fxnode.ru', 6379)
+local cli = red.connect ('127.0.0.1', 6379)
 
 local t = 0
 local function on_timer()
@@ -16,11 +15,11 @@ local function on_timer()
 	local x = 50 + math.cos(t) * 25
 	local y = 50 + math.sin(t) * 25
 
-	cli:set('turubar - x', x)
+	cli:set('turubar - x', x) 
 	cli:set('turubar - y', y)
 	cli:set('prilipchanu - x', x)
 	cli:set('prilipchanu - y', y)
-
+	
 	glib.timeout_add(glib.PRIORITY_DEFAULT, 10, on_timer)
 end
 
